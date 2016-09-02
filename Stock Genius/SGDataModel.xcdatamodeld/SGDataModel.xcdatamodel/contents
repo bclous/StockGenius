@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15G31" minimumToolsVersion="Xcode 7.0">
+    <entity name="Manager" representedClassName="Manager" syncable="YES">
+        <attribute name="fundName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isSGAggregate" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="managerName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="stockHoldingGroups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="StockHoldingGroup" inverseName="manager" inverseEntity="StockHoldingGroup" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="managers" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Stock" representedClassName="Stock" syncable="YES">
+        <attribute name="adjustedPrice1Year" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="adjustedPrice3Year" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="companyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currentPrice" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="earningsPerShare" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="forwardPE" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="marketCap" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="oneDayPercentageChange" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="oneDayPriceChange" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="oneYearRollingReturn" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="threeYearRollingReturn" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="ticker" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trailingPE" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="stockHoldings" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="StockHolding" inverseName="stocks" inverseEntity="StockHolding" syncable="YES"/>
+    </entity>
+    <entity name="StockHolding" representedClassName="StockHolding" syncable="YES">
+        <attribute name="endDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="endPrice" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="isCurrent" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="numberOfShares" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="periodName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="periodPercentageReturn" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="periodPriceReturn" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="startPrice" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="stockHoldingGroup" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StockHoldingGroup" inverseName="stockHoldings" inverseEntity="StockHoldingGroup" syncable="YES"/>
+        <relationship name="stocks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Stock" inverseName="stockHoldings" inverseEntity="Stock" syncable="YES"/>
+    </entity>
+    <entity name="StockHoldingGroup" representedClassName="StockHoldingGroup" syncable="YES">
+        <attribute name="averagePercentageReturn" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="endDate" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="indexPercentageReturn" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="isCurrent" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="outperformancePercentage" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="periodName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="manager" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Manager" inverseName="stockHoldingGroups" inverseEntity="Manager" syncable="YES"/>
+        <relationship name="stockHoldings" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="StockHolding" inverseName="stockHoldingGroup" inverseEntity="StockHolding" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="signUpDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="managers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Manager" inverseName="user" inverseEntity="Manager" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Stock" positionX="117" positionY="135" width="128" height="253"/>
+        <element name="StockHolding" positionX="-54" positionY="135" width="128" height="208"/>
+        <element name="StockHoldingGroup" positionX="-218" positionY="135" width="128" height="178"/>
+        <element name="Manager" positionX="-380" positionY="135" width="128" height="118"/>
+        <element name="User" positionX="-542" positionY="135" width="128" height="73"/>
+    </elements>
+</model>

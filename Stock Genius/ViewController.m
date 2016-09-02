@@ -10,6 +10,8 @@
 
 @interface ViewController ()
 
+@property (strong, nonatomic) NSMutableData *receivedData;
+
 @end
 
 @implementation ViewController
@@ -17,6 +19,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.receivedData = [NSMutableData data];
+    NSURL *url = [NSURL URLWithString:@"https://finance.yahoo.com/d/quotes.csv?s=GE+PTR+MSFT&f=snd1l1yr"];
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionTask *task = [session dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        NSString *csv = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        NSLog(@"finished");
+    }];
+    
+    [task resume];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -13,6 +13,19 @@
 		AB9782DE1D79C7AC00B48D39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9782DC1D79C7AC00B48D39 /* Main.storyboard */; };
 		AB9782E01D79C7AC00B48D39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB9782DF1D79C7AC00B48D39 /* Assets.xcassets */; };
 		AB9782E31D79C7AC00B48D39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9782E11D79C7AC00B48D39 /* LaunchScreen.storyboard */; };
+		AB9782EC1D7A0DDA00B48D39 /* SGDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB9782EA1D7A0DDA00B48D39 /* SGDataModel.xcdatamodeld */; };
+		AB9782FD1D7A14FF00B48D39 /* StockHolding+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9782EE1D7A14FF00B48D39 /* StockHolding+CoreDataProperties.m */; };
+		AB9782FE1D7A14FF00B48D39 /* StockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9782F01D7A14FF00B48D39 /* StockHolding.m */; };
+		AB9782FF1D7A14FF00B48D39 /* Stock+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9782F21D7A14FF00B48D39 /* Stock+CoreDataProperties.m */; };
+		AB9783001D7A14FF00B48D39 /* Stock.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9782F41D7A14FF00B48D39 /* Stock.m */; };
+		AB9783011D7A14FF00B48D39 /* StockHoldingGroup+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9782F61D7A14FF00B48D39 /* StockHoldingGroup+CoreDataProperties.m */; };
+		AB9783021D7A14FF00B48D39 /* StockHoldingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9782F81D7A14FF00B48D39 /* StockHoldingGroup.m */; };
+		AB9783031D7A14FF00B48D39 /* Manager+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9782FA1D7A14FF00B48D39 /* Manager+CoreDataProperties.m */; };
+		AB9783041D7A14FF00B48D39 /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9782FC1D7A14FF00B48D39 /* Manager.m */; };
+		AB9783081D7A155400B48D39 /* Datastore.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9783071D7A155400B48D39 /* Datastore.m */; };
+		AB97830E1D7A1F6200B48D39 /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AB97830B1D7A1F6200B48D39 /* User+CoreDataProperties.m */; };
+		AB97830F1D7A1F6200B48D39 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = AB97830D1D7A1F6200B48D39 /* User.m */; };
+		AB9783111D7A335000B48D39 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB9783101D7A335000B48D39 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +39,30 @@
 		AB9782DF1D79C7AC00B48D39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB9782E21D79C7AC00B48D39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB9782E41D79C7AC00B48D39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB9782EB1D7A0DDA00B48D39 /* SGDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SGDataModel.xcdatamodel; sourceTree = "<group>"; };
+		AB9782ED1D7A14FF00B48D39 /* StockHolding+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StockHolding+CoreDataProperties.h"; sourceTree = "<group>"; };
+		AB9782EE1D7A14FF00B48D39 /* StockHolding+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "StockHolding+CoreDataProperties.m"; sourceTree = "<group>"; };
+		AB9782EF1D7A14FF00B48D39 /* StockHolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockHolding.h; sourceTree = "<group>"; };
+		AB9782F01D7A14FF00B48D39 /* StockHolding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockHolding.m; sourceTree = "<group>"; };
+		AB9782F11D7A14FF00B48D39 /* Stock+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Stock+CoreDataProperties.h"; sourceTree = "<group>"; };
+		AB9782F21D7A14FF00B48D39 /* Stock+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Stock+CoreDataProperties.m"; sourceTree = "<group>"; };
+		AB9782F31D7A14FF00B48D39 /* Stock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stock.h; sourceTree = "<group>"; };
+		AB9782F41D7A14FF00B48D39 /* Stock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stock.m; sourceTree = "<group>"; };
+		AB9782F51D7A14FF00B48D39 /* StockHoldingGroup+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StockHoldingGroup+CoreDataProperties.h"; sourceTree = "<group>"; };
+		AB9782F61D7A14FF00B48D39 /* StockHoldingGroup+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "StockHoldingGroup+CoreDataProperties.m"; sourceTree = "<group>"; };
+		AB9782F71D7A14FF00B48D39 /* StockHoldingGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockHoldingGroup.h; sourceTree = "<group>"; };
+		AB9782F81D7A14FF00B48D39 /* StockHoldingGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockHoldingGroup.m; sourceTree = "<group>"; };
+		AB9782F91D7A14FF00B48D39 /* Manager+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Manager+CoreDataProperties.h"; sourceTree = "<group>"; };
+		AB9782FA1D7A14FF00B48D39 /* Manager+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Manager+CoreDataProperties.m"; sourceTree = "<group>"; };
+		AB9782FB1D7A14FF00B48D39 /* Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Manager.h; sourceTree = "<group>"; };
+		AB9782FC1D7A14FF00B48D39 /* Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Manager.m; sourceTree = "<group>"; };
+		AB9783061D7A155400B48D39 /* Datastore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Datastore.h; sourceTree = "<group>"; };
+		AB9783071D7A155400B48D39 /* Datastore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Datastore.m; sourceTree = "<group>"; };
+		AB97830A1D7A1F6200B48D39 /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataProperties.h"; sourceTree = "<group>"; };
+		AB97830B1D7A1F6200B48D39 /* User+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataProperties.m"; sourceTree = "<group>"; };
+		AB97830C1D7A1F6200B48D39 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		AB97830D1D7A1F6200B48D39 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		AB9783101D7A335000B48D39 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +100,11 @@
 				AB9782D91D79C7AC00B48D39 /* ViewController.h */,
 				AB9782DA1D79C7AC00B48D39 /* ViewController.m */,
 				AB9782DC1D79C7AC00B48D39 /* Main.storyboard */,
+				AB9783091D7A155D00B48D39 /* Datastore */,
+				AB9783051D7A152B00B48D39 /* Data Model */,
 				AB9782DF1D79C7AC00B48D39 /* Assets.xcassets */,
 				AB9782E11D79C7AC00B48D39 /* LaunchScreen.storyboard */,
+				AB9783101D7A335000B48D39 /* GoogleService-Info.plist */,
 				AB9782E41D79C7AC00B48D39 /* Info.plist */,
 				AB9782D31D79C7AC00B48D39 /* Supporting Files */,
 			);
@@ -77,6 +117,43 @@
 				AB9782D41D79C7AC00B48D39 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB9783051D7A152B00B48D39 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB9782EA1D7A0DDA00B48D39 /* SGDataModel.xcdatamodeld */,
+				AB97830A1D7A1F6200B48D39 /* User+CoreDataProperties.h */,
+				AB97830B1D7A1F6200B48D39 /* User+CoreDataProperties.m */,
+				AB97830C1D7A1F6200B48D39 /* User.h */,
+				AB97830D1D7A1F6200B48D39 /* User.m */,
+				AB9782ED1D7A14FF00B48D39 /* StockHolding+CoreDataProperties.h */,
+				AB9782EE1D7A14FF00B48D39 /* StockHolding+CoreDataProperties.m */,
+				AB9782EF1D7A14FF00B48D39 /* StockHolding.h */,
+				AB9782F01D7A14FF00B48D39 /* StockHolding.m */,
+				AB9782F11D7A14FF00B48D39 /* Stock+CoreDataProperties.h */,
+				AB9782F21D7A14FF00B48D39 /* Stock+CoreDataProperties.m */,
+				AB9782F31D7A14FF00B48D39 /* Stock.h */,
+				AB9782F41D7A14FF00B48D39 /* Stock.m */,
+				AB9782F51D7A14FF00B48D39 /* StockHoldingGroup+CoreDataProperties.h */,
+				AB9782F61D7A14FF00B48D39 /* StockHoldingGroup+CoreDataProperties.m */,
+				AB9782F71D7A14FF00B48D39 /* StockHoldingGroup.h */,
+				AB9782F81D7A14FF00B48D39 /* StockHoldingGroup.m */,
+				AB9782F91D7A14FF00B48D39 /* Manager+CoreDataProperties.h */,
+				AB9782FA1D7A14FF00B48D39 /* Manager+CoreDataProperties.m */,
+				AB9782FB1D7A14FF00B48D39 /* Manager.h */,
+				AB9782FC1D7A14FF00B48D39 /* Manager.m */,
+			);
+			name = "Data Model";
+			sourceTree = "<group>";
+		};
+		AB9783091D7A155D00B48D39 /* Datastore */ = {
+			isa = PBXGroup;
+			children = (
+				AB9783061D7A155400B48D39 /* Datastore.h */,
+				AB9783071D7A155400B48D39 /* Datastore.m */,
+			);
+			name = Datastore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB9782E31D79C7AC00B48D39 /* LaunchScreen.storyboard in Resources */,
+				AB9783111D7A335000B48D39 /* GoogleService-Info.plist in Resources */,
 				AB9782E01D79C7AC00B48D39 /* Assets.xcassets in Resources */,
 				AB9782DE1D79C7AC00B48D39 /* Main.storyboard in Resources */,
 			);
@@ -149,9 +227,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB97830E1D7A1F6200B48D39 /* User+CoreDataProperties.m in Sources */,
+				AB9783081D7A155400B48D39 /* Datastore.m in Sources */,
 				AB9782DB1D79C7AC00B48D39 /* ViewController.m in Sources */,
+				AB9782EC1D7A0DDA00B48D39 /* SGDataModel.xcdatamodeld in Sources */,
+				AB9782FE1D7A14FF00B48D39 /* StockHolding.m in Sources */,
+				AB97830F1D7A1F6200B48D39 /* User.m in Sources */,
+				AB9782FD1D7A14FF00B48D39 /* StockHolding+CoreDataProperties.m in Sources */,
 				AB9782D81D79C7AC00B48D39 /* AppDelegate.m in Sources */,
 				AB9782D51D79C7AC00B48D39 /* main.m in Sources */,
+				AB9783021D7A14FF00B48D39 /* StockHoldingGroup.m in Sources */,
+				AB9783041D7A14FF00B48D39 /* Manager.m in Sources */,
+				AB9783001D7A14FF00B48D39 /* Stock.m in Sources */,
+				AB9783031D7A14FF00B48D39 /* Manager+CoreDataProperties.m in Sources */,
+				AB9782FF1D7A14FF00B48D39 /* Stock+CoreDataProperties.m in Sources */,
+				AB9783011D7A14FF00B48D39 /* StockHoldingGroup+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +392,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AB9782EA1D7A0DDA00B48D39 /* SGDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AB9782EB1D7A0DDA00B48D39 /* SGDataModel.xcdatamodel */,
+			);
+			currentVersion = AB9782EB1D7A0DDA00B48D39 /* SGDataModel.xcdatamodel */;
+			path = SGDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AB9782C81D79C7AB00B48D39 /* Project object */;
 }
