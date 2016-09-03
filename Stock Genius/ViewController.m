@@ -7,6 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "FIRDatabase.h"
+#import "FIRAnalytics.h"
+
+@import Firebase;
 
 @interface ViewController ()
 
@@ -29,6 +33,13 @@
     }];
     
     [task resume];
+    
+    FIRDatabase *task = [FIRDatabase database];
+    FIRApp *app = 
+    
+    
+    
+
 }
 
 - (void)didReceiveMemoryWarning {
