@@ -7,8 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "FIRDatabase.h"
-#import "FIRAnalytics.h"
 
 @import Firebase;
 
@@ -34,9 +32,12 @@
     
     [task resume];
     
-    FIRDatabase *task = [FIRDatabase database];
-    FIRApp *app = 
+    FIRDatabase *database = [FIRDatabase database];
+    FIRDatabaseReference *reference = [database reference];
     
+    NSDictionary *lookup = [reference child:@"Managers"];
+    
+    NSLog(@"%@", lookup);
     
     
 
